@@ -2,66 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #111;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 2px solid #555;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 5px;
-    }
-
-    p {
-      color: #aaa;
-      margin-bottom: 20px;
-    }
-
-    .socials a {
-      color: #aaa;
-      margin: 0 10px;
-      font-size: 1.5em;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .socials a:hover {
-      color: #fff;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanush V | Data Analyst</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
-<body>
-  
-  <img src="profile.jpg" alt="Profile" class="profile" />
-  
-  <h1>Dhanush V</h1>
-  <p>Data Analyst | AI & Data Science Enthusiast</p>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="flex flex-col lg:flex-row max-w-7xl mx-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6">
 
-  <div class="socials">
-    <a href="https://github.com/dhanush1919" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/dhanushv/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:dhanush.venkataraman@gmail.com"><i class="fas fa-envelope"></i></a>
+    <!-- Sidebar -->
+    <div class="bg-gray-800 rounded-2xl p-6 w-full lg:w-1/4 space-y-6">
+      <div class="flex flex-col items-center">
+        <img src="https://avatars.githubusercontent.com/u/19330798?v=4" class="w-24 h-24 rounded-full" alt="Profile">
+        <h2 class="text-xl font-bold mt-4">Dhanush V</h2>
+        <span class="text-sm bg-gray-700 px-2 py-1 rounded-full mt-2">Data Analyst</span>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center space-x-2">
+          <i class="ri-mail-line"></i><span>dhanush.venkataraman@gmail.com</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-phone-line"></i><span>+91-9047043942</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-calendar-line"></i><span>March 12, 1999</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-map-pin-line"></i><span>Hyderabad, India</span>
+        </div>
+        <a href="#" class="inline-block text-blue-400 hover:underline"><i class="ri-linkedin-box-line"></i> LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="bg-gray-800 rounded-2xl p-6 w-full lg:w-3/4 space-y-6">
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">About Me</h2>
+        <p class="mb-2">I'm a AI / ML Engineer with 4+ years of experience building machine learning solutions that make a real business impact. I specialize in developing and deploying models, automating MLOps pipelines, and working with real-time data at scale.</p>
+        <p>My toolkit includes Python, SQL, and cloud-native AI platforms, with a strong focus on natural language processing and scalable data workflows. I enjoy turning raw data into intelligent systems that are not only efficient but also deeply aligned with business goals. Whether it's optimizing a recommendation engine or automating a complex analytics process, I bring a mix of technical depth and product intuition to every project.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">What I'm Doing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-700 p-4 rounded-xl">
+            <h3 class="font-bold text-lg mb-1">Machine Learning Solutions</h3>
+            <p>Developing and deploying predictive models that solve real-world problems with measurable business impact.</p>
+          </div>
+          <div class="bg-gray-700 p-4 rounded-xl">
+            <h3 class="font-bold text-lg mb-1">MLOPS Automation</h3>
+            <p>Automating the end-to-end machine learning lifecycle with CI/CD, model tracking, and seamless deployment workflows.</p>
+          </div>
+          <div class="bg-gray-700 p-4 rounded-xl">
+            <h3 class="font-bold text-lg mb-1">Data Engineering & Pipelines</h3>
+            <p>Building scalable data pipelines to collect, transform, and manage large datasets efficiently across cloud platforms.</p>
+          </div>
+          <div class="bg-gray-700 p-4 rounded-xl">
+            <h3 class="font-bold text-lg mb-1">LLM-Powered AI Solutions</h3>
+            <p>Designing intelligent systems using large language models, Retrieval-Augmented Generation (RAG), and agent-based architectures.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">Tools & Technologies</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+          <span class="bg-gray-700 p-2 rounded text-center">Python</span>
+          <span class="bg-gray-700 p-2 rounded text-center">SQL</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Looker Studio</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Gsheet</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Metabase</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Tableau</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Machine Learning</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Data Science</span>
+          <span class="bg-gray-700 p-2 rounded text-center">Gen AI</span>
+          <span class="bg-gray-700 p-2 rounded text-center">DBT</span>
+        </div>
+      </section>
+    </div>
+
   </div>
-
 </body>
 </html>
