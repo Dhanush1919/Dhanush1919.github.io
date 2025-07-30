@@ -25,9 +25,7 @@
       </div>
 
       <nav class="space-y-4">
-        <a href="#" class="flex items-center space-x-3 text-blue-400">
-          <i class="ri-home-5-line"></i><span>Home</span>
-        </a>
+        <!-- Home link removed -->
         <a href="#" class="flex items-center space-x-3 text-blue-400">
           <i class="ri-user-line"></i><span>About Me</span>
         </a>
@@ -51,56 +49,40 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-6 space-y-12">
+    <main class="flex-1 px-12 py-12 space-y-12"> <!-- Added px-12 for more horizontal spacing -->
       <!-- About Me Section -->
-<section class="px-6 py-12 max-w-7xl mx-auto">
-  <div class="flex flex-col md:flex-row items-start md:items-center md:space-x-10">
-    
-    <!-- Left: Profile Photo -->
-    <div class="flex-shrink-0 mb-6 md:mb-0">
-      <img src="/mnt/data/68d220c7-1c96-400d-91e0-6dc4cfc7f0b7.png" alt="Dhanush" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover">
-    </div>
+      <section class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-start md:items-center md:space-x-12">
+          
+          <!-- Left: Profile Photo (User's uploaded version) -->
+          <div class="flex-shrink-0 mb-6 md:mb-0">
+            <img src="/mnt/data/55d3a601-8c36-4652-9743-df27c054bf9b.png" alt="Dhanush" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-2 border-gray-300 shadow-lg">
+          </div>
 
-    <!-- Right: Content -->
-    <div class="flex-1 text-left">
-      <h2 class="text-3xl font-bold text-blue-900 mb-2">About Me</h2>
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">Data Analyst</h3>
-      
-      <p class="italic text-gray-600 mb-4">
-        Hi, I'm <strong>Dhanush</strong>, a Data Analyst with over 4 years of experience working across diverse domains including service-based firms, edtech startups, and the food delivery industry. Currently working with Uber (Ext) role, I bring a hybrid background of 1+ years as a BI Developer and 3+ years as a Data Analyst.
-      </p>
-      
-      <p class="mb-4">
-        I specialize in building <strong class="text-blue-700">scalable dashboards</strong>, conducting <strong class="text-blue-700">exploratory data analysis (EDA)</strong>, and providing <strong class="text-blue-700">actionable business insights</strong> that influence strategic decisions. My experience spans the full data lifecycle — from <strong class="text-blue-700">data pipeline development</strong> and <strong class="text-blue-700">data modeling</strong> to applying <strong class="text-blue-700">machine learning</strong> for solving real-world problems.
-      </p>
-
-      <p class="mb-6">
-        With a strong foundation in analytics and a passion for solving complex problems using data, I am now seeking new opportunities to apply and expand my skills in impactful, growth-oriented environments.
-      </p>
-
-      <!-- Icons + Resume -->
-      <div class="flex items-center flex-wrap gap-4 mb-6">
-        <i class="ri-linkedin-fill text-2xl text-blue-600 cursor-pointer"></i>
-        <i class="ri-github-fill text-2xl text-gray-700 cursor-pointer"></i>
-        <i class="ri-mail-fill text-2xl text-red-600 cursor-pointer"></i>
-        <i class="ri-phone-fill text-2xl text-green-600 cursor-pointer"></i>
-        <button class="bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-800 text-sm">Download Resume</button>
-      </div>
-
-      <!-- Badges Row -->
-      <div class="flex flex-wrap items-center gap-6">
-        <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/dbt_certified_badge_lnmw8i.svg" class="h-10" alt="DBT Certified">
-        <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952652/dbt_learn_cert_xkavbg.svg" class="h-10" alt="DBT Learn">
-        <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/pandas_cert_wv2mya.svg" class="h-10" alt="Pandas Badge">
-        <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/sql_cert_hepdey.svg" class="h-10" alt="SQL Badge">
-        <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952652/problem_solving_cert_bef9ld.svg" class="h-10" alt="Problem Solving Badge">
-      </div>
-    </div>
-  </div>
-</section>
-
+          <!-- Right: Content -->
+          <div class="flex-1 text-left">
+            <h2 class="text-3xl font-bold text-blue-900 mb-2">About Me</h2>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Data Analyst</h3>
+            
+            <p class="italic text-gray-600 mb-4">
+              Hi, I'm <strong>Dhanush</strong>, a Data Analyst with over 4 years of experience working across diverse domains including service-based firms, edtech startups, and the food delivery industry. Currently working with Uber (Ext) role, I bring a hybrid background of 1+ years as a BI Developer and 3+ years as a Data Analyst.
+            </p>
+            
+            <p class="mb-4">
+              I specialize in building <strong class="text-blue-700">scalable dashboards</strong>, conducting <strong class="text-blue-700">exploratory data analysis (EDA)</strong>, and providing <strong class="text-blue-700">actionable business insights</strong> that influence strategic decisions. My experience spans the full data lifecycle — from <strong class="text-blue-700">data pipeline development</strong> and <strong class="text-blue-700">data modeling</strong> to applying <strong class="text-blue-700">machine learning</strong> for solving real-world problems.
+            </p>
+            <!-- Icons + Resume -->
+            <div class="flex items-center flex-wrap gap-4 mb-6">
+              <i class="ri-linkedin-fill text-2xl text-blue-600 cursor-pointer"></i>
+              <i class="ri-github-fill text-2xl text-gray-700 cursor-pointer"></i>
+              <i class="ri-mail-fill text-2xl text-red-600 cursor-pointer"></i>
+              <i class="ri-phone-fill text-2xl text-green-600 cursor-pointer"></i>
+              <button class="bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-800 text-sm">Download Resume</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
-
 </body>
 </html>
