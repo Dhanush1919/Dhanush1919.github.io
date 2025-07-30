@@ -5,82 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhanush V | Data Analyst</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <div class="flex flex-col lg:flex-row max-w-7xl mx-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6">
+<body class="bg-white text-gray-800 font-sans">
+
+  <div class="flex flex-col lg:flex-row min-h-screen">
 
     <!-- Sidebar -->
-    <div class="bg-gray-800 rounded-2xl p-6 w-full lg:w-1/4 space-y-6">
+    <aside class="bg-gray-900 text-white w-full lg:w-1/4 p-6 space-y-8">
       <div class="flex flex-col items-center">
-        <img src="https://avatars.githubusercontent.com/u/19330798?v=4" class="w-24 h-24 rounded-full" alt="Profile">
+        <img src="https://avatars.githubusercontent.com/u/19330798?v=4" alt="Profile" class="w-28 h-28 rounded-full border-4 border-white">
         <h2 class="text-xl font-bold mt-4">Dhanush V</h2>
-        <span class="text-sm bg-gray-700 px-2 py-1 rounded-full mt-2">Data Analyst</span>
+        <div class="flex space-x-3 mt-4">
+          <i class="ri-linkedin-box-fill text-2xl cursor-pointer"></i>
+          <i class="ri-github-fill text-2xl cursor-pointer"></i>
+          <i class="ri-mail-fill text-2xl cursor-pointer"></i>
+          <i class="ri-phone-fill text-2xl cursor-pointer"></i>
+        </div>
       </div>
-      <div class="space-y-4">
-        <div class="flex items-center space-x-2">
-          <i class="ri-mail-line"></i><span>dhanush.venkataraman@gmail.com</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <i class="ri-phone-line"></i><span>+91-9047043942</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <i class="ri-calendar-line"></i><span>March 12, 1999</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <i class="ri-map-pin-line"></i><span>Hyderabad, India</span>
-        </div>
-        <a href="#" class="inline-block text-blue-400 hover:underline"><i class="ri-linkedin-box-line"></i> LinkedIn</a>
-      </div>
-    </div>
+
+      <nav class="space-y-4">
+        <a href="#" class="flex items-center space-x-3 text-blue-400">
+          <i class="ri-home-5-line"></i><span>Home</span>
+        </a>
+        <a href="#" class="flex items-center space-x-3 text-blue-400">
+          <i class="ri-user-line"></i><span>About Me</span>
+        </a>
+        <a href="#" class="flex items-center space-x-3">
+          <i class="ri-briefcase-line"></i><span>Projects</span>
+        </a>
+        <a href="#" class="flex items-center space-x-3">
+          <i class="ri-folder-line"></i><span>Work Experience</span>
+        </a>
+        <a href="#" class="flex items-center space-x-3">
+          <i class="ri-certificate-line"></i><span>Certificates</span>
+        </a>
+        <a href="#" class="flex items-center space-x-3">
+          <i class="ri-mail-send-line"></i><span>Contact</span>
+        </a>
+      </nav>
+
+      <footer class="text-sm text-gray-400 mt-auto">
+        © 2024 <span class="font-semibold">Dhanush V</span>
+      </footer>
+    </aside>
 
     <!-- Main Content -->
-    <div class="bg-gray-800 rounded-2xl p-6 w-full lg:w-3/4 space-y-6">
-      <section>
-        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">About Me</h2>
-        <p class="mb-2">I'm a Data Analyst with 4+ years of experience transforming raw data into meaningful insights that drive business growth and improve user retention. I specialize in solving complex business problems through data storytelling, dashboarding, and actionable analytics.</p>
-        <p>My toolkit spans across tools like Looker Studio, Metabase, Mixpanel, DBT, Excel, GSheets, and Tableau, with strong experience in SQL, Git, and data transformation workflows using SSIS. Having worked across service-based industries, EdTech, and Uber Eats, I bring a unique ability to align data insights with real-world business goals. Whether it's optimizing retention strategies, building stakeholder dashboards, or uncovering hidden trends, I approach every project with curiosity, precision, and an impact-driven mindset.</p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">What I'm Doing</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-gray-700 p-4 rounded-xl">
-            <h3 class="font-bold text-lg mb-1">Machine Learning Solutions</h3>
-            <p>Developing and deploying predictive models that solve real-world problems with measurable business impact.</p>
-          </div>
-          <div class="bg-gray-700 p-4 rounded-xl">
-            <h3 class="font-bold text-lg mb-1">MLOPS Automation</h3>
-            <p>Automating the end-to-end machine learning lifecycle with CI/CD, model tracking, and seamless deployment workflows.</p>
-          </div>
-          <div class="bg-gray-700 p-4 rounded-xl">
-            <h3 class="font-bold text-lg mb-1">Data Engineering & Pipelines</h3>
-            <p>Building scalable data pipelines to collect, transform, and manage large datasets efficiently across cloud platforms.</p>
-          </div>
-          <div class="bg-gray-700 p-4 rounded-xl">
-            <h3 class="font-bold text-lg mb-1">LLM-Powered AI Solutions</h3>
-            <p>Designing intelligent systems using large language models, Retrieval-Augmented Generation (RAG), and agent-based architectures.</p>
+    <main class="flex-1 p-6 space-y-12">
+      <!-- About Me Section -->
+      <section class="text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-4">About Me</h2>
+        <div class="flex flex-col items-center">
+          <img src="https://avatars.githubusercontent.com/u/19330798?v=4" class="w-32 h-32 rounded-full mb-4" alt="Dharmendra">
+          <h3 class="text-xl font-bold text-gray-800">Data Analyst</h3>
+          <p class="italic text-gray-600 mb-4">Hi, I'm <strong>Dhanush</strong>, an Analytics Engineer with 2 years of experience in the data engineering & analytics domain.</p>
+          <p class="max-w-2xl text-center">
+            Coming from a quantitative background, I have turned myself into a data analyst with a diverse skill set including <strong class="text-blue-700">Business Intelligence</strong>,
+            <strong class="text-blue-700">Data Prep & Analysis</strong>, <strong class="text-blue-700">Data Governance</strong>,
+            <strong class="text-blue-700">Reporting & Visualization</strong> and <strong class="text-blue-700">Stakeholder Management</strong>. I have proficiency in dbt, Python, Airflow, Snowflake, Looker, Tableau and Statistics.
+          </p>
+          <p class="mt-4 max-w-xl text-center">
+            I am seeking new challenges & opportunities to develop and implement my diverse skills to extract impactful results for the organizations.
+          </p>
+          <div class="flex space-x-4 mt-6">
+            <i class="ri-linkedin-fill text-2xl text-blue-600 cursor-pointer"></i>
+            <i class="ri-github-fill text-2xl text-gray-700 cursor-pointer"></i>
+            <i class="ri-mail-fill text-2xl text-red-600 cursor-pointer"></i>
+            <i class="ri-phone-fill text-2xl text-green-600 cursor-pointer"></i>
+            <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 text-sm">Download Resume</button>
           </div>
         </div>
       </section>
 
+      <!-- Badge Section -->
       <section>
-        <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mb-4">Tools & Technologies</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-          <span class="bg-gray-700 p-2 rounded text-center">Python</span>
-          <span class="bg-gray-700 p-2 rounded text-center">SQL</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Looker Studio</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Gsheet</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Metabase</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Tableau</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Machine Learning</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Data Science</span>
-          <span class="bg-gray-700 p-2 rounded text-center">Gen AI</span>
-          <span class="bg-gray-700 p-2 rounded text-center">DBT</span>
+        <div class="flex justify-center flex-wrap gap-6 mt-6">
+          <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/dbt_certified_badge_lnmw8i.svg" class="h-16" alt="DBT Certified">
+          <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952652/dbt_learn_cert_xkavbg.svg" class="h-16" alt="DBT Learn">
+          <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/pandas_cert_wv2mya.svg" class="h-16" alt="Pandas Badge">
+          <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952653/sql_cert_hepdey.svg" class="h-16" alt="SQL Badge">
+          <img src="https://res.cloudinary.com/dbtk64lp4/image/upload/v1687952652/problem_solving_cert_bef9ld.svg" class="h-16" alt="Problem Solving Badge">
         </div>
       </section>
-    </div>
 
+    </main>
   </div>
+
 </body>
 </html>
