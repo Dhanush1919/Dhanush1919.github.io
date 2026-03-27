@@ -917,9 +917,9 @@ Journey</h3>
 
     <!-- Contact Form -->
     <form 
+  id="contactForm"
   action="https://docs.google.com/forms/d/e/1FAIpQLSeNiEnBDH4BAjA3t9gGr6_MBVZzZUl7jHwNMwVTXA5FkMzDVw/formResponse" 
   method="POST"
-  target="_blank"
   class="space-y-4"
 >
 
@@ -954,6 +954,16 @@ Journey</h3>
   </button>
 
 </form>
+
+      <div id="successPopup" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Message Sent ✅</h2>
+          <p class="text-sm text-gray-600 mt-2">I'll get back to you soon.</p>
+          <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-blue-900 text-white rounded">
+            Close
+          </button>
+        </div>
+      </div>
     
   </div>
 </section>
@@ -1000,6 +1010,33 @@ function toggleDesc(button) {
     arrow.classList.add("rotate-180");
   }
 }
+</script>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const popup = document.getElementById("successPopup");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData
+    });
+
+    // Show popup
+    popup.classList.remove("hidden");
+
+    // Reset form
+    form.reset();
+  });
+
+  function closePopup() {
+    popup.classList.add("hidden");
+  }
 </script>
 
   
